@@ -29,3 +29,38 @@ Kết quả mở rộng cần đạt: `TESTS=8 FAILED=0`. Có lớp kiểm tra s
 ## Tệp nộp
 
 Giữ mã nguồn, dữ liệu mẫu và kiểm thử. Ghi lại lệnh chạy trong README. Không đưa `.local`, mật khẩu hoặc dữ liệu cá nhân thật vào kho mã và gói nộp. Nộp đúng commit theo yêu cầu của bài; nếu dùng Actions, đính kèm lần chạy tương ứng.
+
+## Kết quả thực hiện
+
+Đã hoàn thiện module PHP kiểm tra điều kiện đăng ký.
+
+### Chức năng
+- Kiểm tra sức chứa đăng ký.
+- Từ chối khi dữ liệu không hợp lệ.
+- Từ chối khi đăng ký đã đóng.
+- Xác nhận đăng ký khi còn chỗ.
+- Đưa vào danh sách chờ khi đã hết chỗ và cho phép chờ.
+- Từ chối khi số đăng ký vượt quá sức chứa.
+
+### Các lệnh kiểm thử
+
+Kiểm tra môi trường:
+
+    bash lab.sh check
+
+Chạy chương trình:
+
+    bash lab.sh run
+
+Kiểm thử phần mẫu:
+
+    bash lab.sh test
+
+Kiểm thử phần mở rộng:
+
+    bash lab.sh extend
+
+### Kết quả kiểm thử
+- Kiểm thử mẫu: 5/5 thành công.
+- Kiểm thử mở rộng: 8/8 thành công.
+- Tổng cộng: 13/13 bài kiểm thử thành công.
